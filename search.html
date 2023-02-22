@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보입력</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub copy.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <form name="" action="" method="">
+    <div id="wrap">
+      <header id="header" class="clear">
+        <h1><img src="img/chung02.jpg" alt="충북대학교"></h1>
+        <div class="clear">
+            <p class="clear"><span>담장자님 환영합니다.</span><span>로그아웃</span></p>
+            <button type="button"><img src="img/logout.png" alt="로그아웃"></button>
+        </div>
+
+    </header><!--header-->
+    <div id="contentWrap" class="clear">
+      <button type="button" id="open1">
+        <span>열기</span>
+    </button>
+    <aside id="leftWrap">
+        <a href="#" id="close1">닫기</a>
+        <h5>기술이전</h5>
+        <ul>
+          <li><a href="index.html">기술이전 신청</a></li>
+          <li><a href="#">기술이전 결재</a></li>
+          <li><a href="#">기술이전 관리</a></li>
+          <li><a href="search.html" class="on">기술이전 조회</a></li>
+          <li><a href="#">기술이전 통계</a></li>
+      </ul>
+      <h5>관리</h5>
+      <ul>
+       <li><a href="sub01.html">권한 관리</a></li>
+       <li><a href="sub02.html">메뉴 관리</a></li>
+       <li><a href="sub03.html">사용자 관리</a></li>
+       <li><a href="sub04.html">코드 관리</a></li>
+       <li><a href="#">접속 통계</a></li>
+   </ul>
+    </aside>
+      <div id="container">
+
+        <div class="cont04">
+         
+          <fieldset>
+            <legend></legend>
+           
+              <table width="100%" cellspacing="0" cellpadding="4px" class="condition">
+                <colgroup>
+                    <col width="6%">
+                    <col width="17%">
+                    <col width="27%">
+                    <col width="17%">
+                    <col width="27%">
+                    <col width="6%">
+                </colgroup>
+          <tbody>
+            <tr>
+              <th class="td_dark_white dott lneHgt" rowspan="5">검색<br>조건</th>
+              <td class="td_dark_white">
+                <label for="process01">업무절차</label><input type="checkbox" id="process01" name="proce01" value="업무절차">
+              </td> 
+              <th class="td_dark_blank" colspan="4">
+                <p class="line05">
+                  <span><input type="checkbox" id="process02" name="proce02"><label for="process02">신청</label></span>
+                  <span><input type="checkbox" id="process03" name="proce02"><label for="process03">승인</label></span>
+                  <span><input type="checkbox" id="process04" name="proce02"><label for="process04">계약체결</label></span>
+                  <span><input type="checkbox" id="process05" name="proce02"><label for="process05">기술료입금</label></span>
+                  <span><input type="checkbox" id="process06" name="proce02"><label for="process06">종료</label></span>
+                  <span><input type="checkbox" id="process07" name="proce02"><label for="process07">신청취소</label></span>
+                  <span><input type="checkbox" id="process08" name="proce02"><label for="process08">계약취소</label></span>
+                </p>
+              </th>  
+            </tr>
+            <tr>
+              <th class="td_dark_white">
+                <label for="process30">기술유형</label><input type="checkbox" id="process30" name="proce01" value="기술유형">
+              </th>
+              <td class="td_dark_blank" colspan="4">
+                <p class="line05">
+                  <span><input type="checkbox" id="process09" name="proce04"><label for="process09">특허</label></span>
+                  <span><input type="checkbox" id="process10" name="proce04"><label for="process10">노하우</label></span>
+                  <span><input type="checkbox" id="process11" name="proce04"><label for="process11">자문</label></span>
+                  <span><input type="checkbox" id="process12" name="proce04"><label for="process12">실용신안</label></span>
+                  <span><input type="checkbox" id="process13" name="proce04"><label for="process13">디자인, 의장</label></span><br>
+                  <span><input type="checkbox" id="process14" name="proce04"><label for="process14">상표</label></span>
+                  <span><input type="checkbox" id="process15" name="proce04"><label for="process15">소프트웨어</label></span>
+                  <span><input type="checkbox" id="process16" name="proce04"><label for="process16">저작권</label></span>
+                  <span><input type="checkbox" id="process17" name="proce04"><label for="process17">MTA(물질이전계약)</label></span>
+                  <span><input type="checkbox" id="process18" name="proce04"><label for="process18">기타</label></span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="td_dark_white">
+                <label for="process31">거래유형</label><input type="checkbox" id="process31" name="proce01" value="거래유형">
+              </td> 
+              <th class="td_dark_blank" colspan="4">
+                <p class="line05">
+                  <span><input type="checkbox" id="process19" name="proce05"><label for="process19">신청</label></span>
+                  <span><input type="checkbox" id="process20" name="proce05"><label for="process20">승인</label></span>
+                  <span><input type="checkbox" id="process21" name="proce05"><label for="process21">계약체결</label></span>
+                  <span><input type="checkbox" id="process22" name="proce05"><label for="process22">기술료입금</label></span>
+                  <span><input type="checkbox" id="process23" name="proce05"><label for="process23">종료</label></span>
+                  <span><input type="checkbox" id="process24" name="proce05"><label for="process24">신청취소</label></span>
+                  <span><input type="checkbox" id="process25" name="proce05"><label for="process25">계약취소</label></span>
+                </p>
+              </th>  
+            </tr>
+            <tr>
+              <td class="td_dark_white">상세검색</td> 
+              <th class="td_dark_blank" colspan="4">
+                <p class="line05">
+                  <span><input type="checkbox" id="process26" name="proce06"><label for="process26" onclick='checkOnlyOne(this)'>입금내용</label></span>
+                  <span><input type="checkbox" id="process27" name="proce06"><label for="process27" onclick='checkOnlyOne(this)'>기술 및 지식재산권</label></span>
+                  <span><input type="checkbox" id="process28" name="proce06"><label for="process28" onclick='checkOnlyOne(this)'>발명자 정보</label></span>
+                  <span><input type="checkbox" id="process29" name="proce06"><label for="process29" onclick='checkOnlyOne(this)'>관련 연구과제</label></span>
+                </p>
+              </th> 
+            </tr>
+            <tr>
+              <td class="td_dark_white dott">기술이전 계약일</td> 
+              <td class="td_dark_white dott">
+                <div class="search-option-wrapper-right">
+                  <div class="form-checkbox check-all form-checkbox-sm">
+                    <input type="checkbox" id="document-date" value="on">
+                    <label for="document-date">전체</label>
+                  </div>
+                  <div class="recent-date-wrapper">
+                    <span class="date-text">최근</span>
+                    <input class="form-input form-input-sm" id="latest" value="" maxlength="2"> 
+                    
+                    <span class="date-text">년</span>
+                  </div>
+                  <div class="recent-period-wrapper">
+                    <input class="form-input form-input-sm" id="dateFrom" placeholder="YYYYMMDD" value="20220101" maxlength="8">
+                    <span class="date-text">~</span>
+                    <input class="form-input form-input-sm" id="dateTo" placeholder="YYYYMMDD" value="" maxlength="8">
+                 
+                  </div>
+                </div>
+              </td>
+              <td class="td_dark_white dott">기술료 입금일</td> 
+              <td class="td_dark_white dott" colspan="2">
+                <div class="search-option-wrapper-right">
+                  <div class="form-checkbox check-all form-checkbox-sm">
+                    <input type="checkbox" id="document-date" value="on">
+                    <label for="document-date">전체</label>
+                  </div>
+                  <div class="recent-date-wrapper">
+                    <span class="date-text">최근</span>
+                    <input class="form-input form-input-sm" id="latest" value="" maxlength="2">
+                    <span class="date-text">년</span>
+                  </div>
+                  <div class="recent-period-wrapper">
+                    <input class="form-input form-input-sm" id="dateFrom" placeholder="YYYYMMDD" value="20220101" maxlength="8" style="width: 80px !important">
+                    <span class="date-text">~</span>
+                    <input class="form-input form-input-sm" id="dateTo" placeholder="YYYYMMDD" value="" maxlength="8">
+                    <span class="recent-date-alert" style="visibility: hidden;"></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="td_dark_white dott lneHgt" rowspan="6">검색<br>입력</td>
+                <td class="td_dark_white">
+                  <label for="techper01">기술이전 책임자</label>
+                </td> 
+              <td class="td_dark_white">
+                <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper01">
+              </td>
+              <td class="td_dark_white">
+                <label for="techper02">계약관리 담당자</label>
+              </td> 
+            <td class="td_dark_white">
+              <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper02">
+            </td>
+            <td class="td_dark_white mer" rowspan="2">
+              <button type="button">검색</button>
+            </td>
+            </tr>
+            <tr>
+                <td class="td_dark_white">
+                  <label for="techper03">관리번호</label>
+                </td> 
+              <td class="td_dark_white">
+                <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper03">
+              </td>
+              <td class="td_dark_white">
+                <label for="techper04">신청번호</label>
+              </td> 
+            <td class="td_dark_white">
+              <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper04">
+            </td>
+            </tr>
+            <tr>
+              <td scope="row" colspan="5" class="bor_right dott">
+                <a href="#" id="viewhidden" onclick="return false;" class="button">검색필드 더보기</a>
+                 
+              <table width="100%" cellspacing="0" cellpadding="4px"  id="hidden" style="display:none;">
+                <colgroup>
+                    <col width="18%">
+                    <col width="29%">
+                    <col width="18%">
+                    <col width="35%">
+                </colgroup>
+          <tbody>
+
+            <tr>
+              <td class="td_border borno01">
+                <label for="techper05">업체명</label>
+              </td> 
+            <td class="td_border">
+              <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper05">
+            </td>
+            <td class="td_border">
+              <label for="techper06">신청인</label>
+            </td> 
+          <td class="td_border borno02" colspan="2">
+            <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper06">
+          </td>
+          </tr>
+          <tr>
+            <td class="td_border borno01">
+              <label for="techper07">사업자등록번호</label>
+            </td> 
+          <td class="td_border">
+            <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper07">
+          </td>
+          <td class="td_border">
+            <label for="techper08">발명자</label>
+          </td> 
+        <td class="td_border borno02" colspan="2">
+          <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper08">
+        </td>
+        </tr>
+        <tr>
+          <td class="td_border borno01 borno03">
+            <label for="techper09">출원번호</label>
+          </td> 
+        <td class="td_border borno03">
+          <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper09">
+        </td>
+        <td class="td_border borno03">
+          <label for="techper10">기술명(발명의 명칭)</label>
+        </td> 
+      <td class="td_border borno02 borno03" colspan="2">
+        <input type="text" maxlength="" value="" style="width:96%" class="blue_input" id="techper10">
+      </td>
+      </tr>
+          </tbody>
+              </table>
+              </td>
+            </tr>
+          
+         
+      
+          </tbody>
+              </table>
+          </fieldset> 
+          <fieldset>
+            <legend></legend>
+           
+              <table width="100%" cellspacing="0" cellpadding="4px" class="noline">
+                <colgroup>
+                    <col width="6%">
+                    <col width="94%">
+                </colgroup>
+          <tbody>
+            <tr>
+              <th class="td_dark_white lneHgt" rowspan="2">검색<br>결과 <button type="button" id="modal-open21">출력항목<br>설정</button></td>
+              <td class="td_dark_white">
+                <div class="allWrap">
+                  <ul class="clear all">
+                    <li><a href="#">전체<span>(100)</span></a></li>
+                    <li>
+                      <ul class="clear remain">
+                        <li><a href="#">신청<span>(100)</span></a></li>
+                        <li><a href="#">승인<span>(100)</span></a></li>
+                        <li><a href="#">계약체결<span>(100)</span></a></li>
+                        <li><a href="#">기술료 입금<span>(100)</span></a></li>
+                        <li><a href="#">종료<span>(5)</span></a></li>
+                        <li><a href="#">신청취소<span>(0)</span></a></li>
+                        <li><a href="#">계약취소<span>(0)</span></a></li>
+                        <li><a href="#">특허<span>(100)</span></a></li>
+                        <li><a href="#">노하우<span>(100)</span></a></li>
+                        <li><a href="#">자문<span>(100)</span></a></li>
+                        <li><a href="#">실용실안<span>(100)</span></a></li>
+                        <li><a href="#">디자인, 의장<span>(100)</span></a></li>
+                        <li><a href="#">상표<span>(5)</span></a></li>
+                        <li><a href="#">소프트웨어<span>(0)</span></a></li>
+                        <li><a href="#">저작권<span>(0)</span></a></li>
+                        <li><a href="#">MTA<span>(0)</span></a></li>
+                        <li><a href="#">기타<span>(0)</span></a></li>
+                      </ul>
+              
+                  </ul>
+                </div><!--.allWrap-->
+              
+              </td> 
+             
+            </tr>
+          
+            <tr>
+              
+              <th class="td_dark_blank padleftno">
+                <div class="filterWrap clear">
+                  <div class="fitericon">
+                    <button type="button" class="filterImage open50" onclick="onDisplay()">
+                      <img src="img/filter.png" alt="">
+                    </button>
+                    <div id="noneDiv" style="display: none;">
+                      <a href="#" class="close50" onclick="offDisplay()">닫기</a>
+                      <p class="marb clear">
+                        <button type="button" class="refresh"><img src="./img/refresh.gif" alt="새로고침"></button> <button type="button" class="applyfil">필터적용</button>
+                      </p>
+                     
+                        <ul class="menuWrap clear">
+                          <li class="has-sub">
+                            <a href="#">업무절차</a>
+                            <button type="button">열기</button>
+                            <ul>
+                              <li><input type="checkbox" name="sub01" id="submenu01"><label for="submenu01">신청</label><span>(1)</span></li>
+                              <li><input type="checkbox" name="sub01" id="submenu02"><label for="submenu02">승인</label><span>(2)</span></li>
+                              <li><input type="checkbox" name="sub01" id="submenu03"><label for="submenu03">계약체결</label><span>(3)</span></li>
+                              <li><input type="checkbox" name="sub01" id="submenu04"><label for="submenu04">기술료 입금</label><span>(2)</span></li>
+                              <li><input type="checkbox" name="sub01" id="submenu05"><label for="submenu05">종료</label><span></span></li>
+                              <li><input type="checkbox" name="sub01" id="submenu06"><label for="submenu06">신청취소</label><span></span></li>  
+                              <li><input type="checkbox" name="sub01" id="submenu07"><label for="submenu07">계약취소</label><span></span></li>     
+                  
+                            </ul>
+                          </li>
+                            <li class="has-sub"><a href="#">기술이전 계약일</a>
+                              <button type="button">열기</button>
+                              <ul>  
+                                <li><input type="checkbox" name="sub02" id="submenu08"><label for="submenu08">2022-01-01</label></li>
+                                <li><input type="checkbox" name="sub02" id="submenu09"><label for="submenu09">2022-03-12</label></li>
+                                <li><input type="checkbox" name="sub02" id="submenu10"><label for="submenu10">2022-02-12</label></li>
+                            </ul>
+                          </li>
+                      </li>
+                      <li class="has-sub"><a href="#">대표기술 유형</a>
+                        <button type="button">열기</button>
+                        <ul>   
+                          <li><input type="checkbox" name="sub03" id="submenu11"><label for="submenu11">특허</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu12"><label for="submenu12">노하우</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu13"><label for="submenu13">자문</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu14"><label for="submenu14">실문신안</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu15"><label for="submenu15">디자인, 의장</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu16"><label for="submenu16">상표</label><span></span></li>  
+                          <li><input type="checkbox" name="sub03" id="submenu17"><label for="submenu17">소프트웨어</label><span></span></li>   
+                          <li><input type="checkbox" name="sub03" id="submenu18"><label for="submenu18">저작권</label><span></span></li>
+                          <li><input type="checkbox" name="sub03" id="submenu19"><label for="submenu19">MTA(물질이전계약)</label><span></span></li>  
+                          <li><input type="checkbox" name="sub03" id="submenu20"><label for="submenu20">기타</label><span></span></li>    
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">기술이전 책임자 성명</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub04" id="submenu21"><label for="submenu21">김책임</label></li>
+                          <li><input type="checkbox" name="sub04" id="submenu22"><label for="submenu22">이책임</label></li>
+                          <li><input type="checkbox" name="sub04" id="submenu23"><label for="submenu23">박책임</label></li>     
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">기술이전 책임자 소속</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub05" id="submenu24"><label for="submenu24">공과대학</label></li>
+
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">업체명</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub06" id="submenu25"><label for="submenu25">벨루션</label></li>
+
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">입금총액</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub07" id="submenu26"><label for="submenu26">20,000,000</label></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">계약총액</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub08" id="submenu27"><label for="submenu27">20,000,000</label></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">거래유형</a>
+                        <button type="button">열기</button>
+                        <ul>   
+                          <li><input type="checkbox" name="sub09" id="submenu28"><label for="submenu28">매매</label><span></span></li>
+                          <li><input type="checkbox" name="sub09" id="submenu29"><label for="submenu29">전용실시</label><span></span></li>
+                          <li><input type="checkbox" name="sub09" id="submenu30"><label for="submenu30">통상실시</label><span></span></li>
+                          <li><input type="checkbox" name="sub09" id="submenu31"><label for="submenu31">기술제휴</label><span></span></li>
+                          <li><input type="checkbox" name="sub09" id="submenu32"><label for="submenu32">OEM, ODM</label><span></span></li>
+                          <li><input type="checkbox" name="sub09" id="submenu33"><label for="submenu33">M&A</label><span></span></li>  
+                          <li><input type="checkbox" name="sub09" id="submenu34"><label for="submenu34">기타</label><span></span></li>     
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">계약 기술료 수취유형</a>
+                        <button type="button">열기</button>
+                        <ul>
+                          <li><input type="checkbox" name="sub10" id="submenu35"><label for="submenu35">Y</label></li>
+                          <li><input type="checkbox" name="sub10" id="submenu36"><label for="submenu36">N</label></li>
+
+                        </ul>
+                      </li>
+                      <li class="has-sub"><a href="#">기술이전 계약일</a>
+                        <button type="button">열기</button>
+                        <ul>  
+                          <li><input type="checkbox" name="sub11" id="submenu37"><label for="submenu37">2022-01-01</label></li>
+                          <li><input type="checkbox" name="sub11" id="submenu38"><label for="submenu38">2022-03-12</label></li>
+                          <li><input type="checkbox" name="sub11" id="submenu39"><label for="submenu39">2022-02-12</label></li>
+                      </ul>
+                    </li>
+                    <li class="has-sub"><a href="#">입금여부</a>
+                      <button type="button">열기</button>
+                      <ul>
+                        <li><input type="checkbox" name="sub12" id="submenu40"><label for="submenu40">Y</label></li>
+                        <li><input type="checkbox" name="sub12" id="submenu41"><label for="submenu41">N</label></li>
+
+                      </ul>
+                    </li>
+                    <li class="has-sub"><a href="#">입금 기술료 수취유형</a>
+                      <button type="button">열기</button>
+                      <ul>
+                        <li><input type="checkbox" name="sub13" id="submenu42"><label for="submenu42">Y</label></li>
+                        <li><input type="checkbox" name="sub13" id="submenu43"><label for="submenu43">N</label></li>
+                      </ul>
+                    </li>
+                    <li class="has-sub"><a href="#">입금일</a>
+                      <button type="button">열기</button>
+                      <ul>  
+                        <li><input type="checkbox" name="sub14" id="submenu44"><label for="submenu44">2022-01-01</label></li>
+                        <li><input type="checkbox" name="sub14" id="submenu45"><label for="submenu45">2022-03-12</label></li>
+                        <li><input type="checkbox" name="sub14" id="submenu46"><label for="submenu46">2022-02-12</label></li>
+                    </ul>
+                  </li> 
+                  <li class="has-sub"><a href="#">발명자보상금 지급여부</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub15" id="submenu47"><label for="submenu47">Y</label></li>
+                      <li><input type="checkbox" name="sub15" id="submenu48"><label for="submenu48">N</label></li>
+                    </ul>
+                  </li>     
+                  <li class="has-sub"><a href="#">입금금액(입금예정금액)</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub16" id="submenu49"><label for="submenu49">20,000,000</label></li>
+                      <li><input type="checkbox" name="sub16" id="submenu50"><label for="submenu50">30,000,000</label></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">기술유형</a>
+                    <button type="button">열기</button>
+                    <ul>   
+                      <li><input type="checkbox" name="sub17" id="submenu51"><label for="submenu51">특허</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu52"><label for="submenu52">노하우</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu53"><label for="submenu53">자문</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu54"><label for="submenu54">실용실안</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu55"><label for="submenu55">디자인, 의장</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu56"><label for="submenu56">상표</label><span></span></li>  
+                      <li><input type="checkbox" name="sub17" id="submenu57"><label for="submenu57">소프트웨어</label><span></span></li>  
+                      <li><input type="checkbox" name="sub17" id="submenu58"><label for="submenu57">저작권</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu59"><label for="submenu59">MTA(물질이전계약)</label><span></span></li>
+                      <li><input type="checkbox" name="sub17" id="submenu60"><label for="submenu60">기타</label><span></span></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">발명자 정보(성명)</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub18" id="submenu61"><label for="submenu61">김책임</label></li>
+                      <li><input type="checkbox" name="sub18" id="submenu62"><label for="submenu62">이책임</label></li>
+                      <li><input type="checkbox" name="sub18" id="submenu63"><label for="submenu63">박책임</label></li>     
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">발명자 정보(소속)</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub19" id="submenu64"><label for="submenu64">공과대학</label></li>
+
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">과제번호</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub20" id="submenu65"><label for="submenu65">2022-001</label></li>
+                      <li><input type="checkbox" name="sub20" id="submenu66"><label for="submenu66">2022-002</label></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">과제책임자</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub21" id="submenu67"><label for="submenu67">김책임</label></li>
+                      <li><input type="checkbox" name="sub21" id="submenu68"><label for="submenu68">이책임</label></li>
+                      <li><input type="checkbox" name="sub21" id="submenu69"><label for="submenu69">박책임</label></li>     
+                    </ul>
+                  </li>
+                  <li class="has-sub"><a href="#">관리연구소</a>
+                    <button type="button">열기</button>
+                    <ul>
+                      <li><input type="checkbox" name="sub22" id="submenu70"><label for="submenu70">벨루션</label></li>
+
+                    </ul>
+                  </li>
+                        </ul>   
+                     </div>
+                   </div>
+                   <div class="filtercont">
+                    <fieldset>
+                      <legend></legend>
+                     
+                        <table width="100%" cellspacing="0" cellpadding="4px">
+                          <colgroup>
+                              <col width="3%">
+                              <col width="3%">
+                              <col width="9%">
+                              <col width="10%">
+                              <col width="10%">
+                              <col width="8%">
+                              <col width="8%">
+                              <col width="11%">
+                              <col width="20%">
+                              <col width="9%">
+                              <col width="9%">
+                          </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="td_dark_white"><input type="checkbox" id="filcon01" name="filconAll"></td>
+                        <th class="td_dark_white">NO.</th> 
+                        <th class="td_dark_white">관리번호</th>  
+                        <th class="td_dark_white">계약일</th>  
+                        <th class="td_dark_white">기술유형 대표</th> 
+                        <th class="td_dark_white">책임자</th>  
+                        <th class="td_dark_white">책임자 소속</th>  
+                        <th class="td_dark_white">업체명</th> 
+                        <th class="td_dark_white">기술명 (대표)</th>  
+                        <th class="td_dark_white">입금총액</th>  
+                        <th class="td_dark_white">계약총액</th>
+                      </tr>
+                      <tr>
+                        <td class="td_dark_white"><input type="checkbox" id="filcon02" name="filconAll"></td>
+                        <td class="td_dark_white">1</td>
+                        <td class="td_dark_white">2022-001</td>
+                        <td class="td_dark_white">2022-01-01</td>
+                        <td class="td_dark_white">노하우</td>
+                        <td class="td_dark_white">김책임</td>
+                        <td class="td_dark_white">공과대학</td>
+                        <td class="td_dark_white">벨루션</td>
+                        <td class="td_dark_white">전기자동차 배터리 교체 시스템 및 방법</td>
+                        <td class="td_dark_white">1,000</td>
+                        <td class="td_dark_white">300</td>
+                      </tr>
+                      <tr>
+                        <td class="td_dark_white"><input type="checkbox" id="filcon02" name="filconAll"></td>
+                        <td class="td_dark_white">2</td>
+                        <td class="td_dark_white">2022-001</td>
+                        <td class="td_dark_white">2022-01-01</td>
+                        <td class="td_dark_white">노하우</td>
+                        <td class="td_dark_white">이책임</td>
+                        <td class="td_dark_white">공과대학</td>
+                        <td class="td_dark_white">벨루션</td>
+                        <td class="td_dark_white">하이브리드</td>
+                        <td class="td_dark_white">100</td>
+                        <td class="td_dark_white">300</td>
+                      </tr>
+                      <tr>
+                        <td class="td_dark_white"><input type="checkbox" id="filcon02" name="filconAll"></td>
+                        <td class="td_dark_white">3</td>
+                        <td class="td_dark_white">2022-001</td>
+                        <td class="td_dark_white">2022-01-01</td>
+                        <td class="td_dark_white">노하우</td>
+                        <td class="td_dark_white">박책임</td>
+                        <td class="td_dark_white">공과대학</td>
+                        <td class="td_dark_white">벨루션</td>
+                        <td class="td_dark_white">하이브리드</td>
+                        <td class="td_dark_white">100</td>
+                        <td class="td_dark_white">300</td>
+                      </tr>
+  
+                    </tbody>
+                        </table>
+                    </fieldset> 
+                   </div>
+                </div><!--.filterWrap-->
+              </th> 
+            </tr>
+
+     
+          </tbody>
+              </table>
+          </fieldset> 
+
+        </div> <!--cont04-->
+
+
+      </div><!--#container-->
+    </div><!--#contentWrap-->
+
+    <div class="popup-wrap21" id="popup21">
+      <div class="popup21">
+              <fieldset>
+                <p class="tit03">출력항목 설정 <span>최대 9개까지 선택 가능</span></p>
+                  <table class="output">
+                      <colgroup>
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                      </colgroup>
+                      <tbody>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup01" name="set01"><label for="setup01">관리번호</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup02" name="set01"><label for="setup02">계약일</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup03" name="set01"><label for="setup03">기술유형 (대표)</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup04" name="set01"><label for="setup04">책임자</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup05" name="set01"><label for="setup05">책임자 소속</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup06" name="set01"><label for="setup06">업체명</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup07" name="set01"><label for="setup07">기술명(대표)</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup08" name="set01"><label for="setup08">입금총액</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup09" name="set01"><label for="setup09">계약총액</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup10" name="set01"><label for="setup10">업무절차</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup11" name="set01"><label for="setup11">거래유형</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup12" name="set01"><label for="setup12">기술료 수취유형(계약)</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup10" name="set01"><label for="setup10">계약종료일</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                
+                              </p>
+                            </td>
+                          </tr>
+                         
+                      </tbody>
+                  </table>
+
+                  <table>
+                      <colgroup>
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td_bornon tit04" colspan="3">
+                            입금내용
+                          </td>
+                        </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup15" name="set02"><label for="setup15">입금여부</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup16" name="set02"><label for="setup16">차수</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup17" name="set02"><label for="setup17">기술료 수취유형(입금)</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup18" name="set02"><label for="setup18">입금일</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup19" name="set02"><label for="setup19">발명자 보상금 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지급여부</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup20" name="set02"><label for="setup20">입금금액<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(입금예정금액)</label></span>
+                              </p>
+                            </td>
+                          </tr>
+
+                         
+                      </tbody>
+                  </table>
+             
+                  <table>
+                      <colgroup>
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td_bornon tit04" colspan="3">
+                            기술 및 지식재산권
+                          </td>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup21" name="set03"><label for="setup21">대표기술 여부(Y/N)</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup21" name="set03"><label for="setup21">기술유형</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup22" name="set03"><label for="setup22">기술명(발명의 명칭)</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup23" name="set03"><label for="setup23">출원번호</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup24" name="set03"><label for="setup24">등록번호</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                               
+                              </p>
+                            </td>
+                          </tr>
+
+                         
+                      </tbody>
+                  </table>
+                 
+                  <table>
+                      <colgroup>
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td_bornon tit04" colspan="3">
+                            발명자 정보
+                          </td>
+                          <tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup25" name="set04"><label for="setup25">성명</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup26" name="set04"><label for="setup26">소속</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup27" name="set04"><label for="setup27">주민번호</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup28" name="set04"><label for="setup28">신분구분</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup29" name="set04"><label for="setup29">기여율(%)</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup30" name="set04"><label for="setup30">발명자보상금(개인)</label></span> 
+                              </p>
+                            </td>
+                          </tr>
+
+                         
+                      </tbody>
+                  </table>
+              
+                  <table>
+                      <colgroup>
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                          <col width="calc(100% / 3)">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td_bornon tit04" colspan="3">
+                            관련 연구과제
+                          </td>
+                          <tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup31" name="set05"><label for="setup31">대표과제 여부(Y/N)</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup32" name="set05"><label for="setup32">과제번호</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03"> 
+                                <span><input type="checkbox" id="setup33" name="set05"><label for="setup32">과제책임자</label></span>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup34" name="set05"><label for="setup34">총연구비</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup35" name="set05"><label for="setup35">관리연구소</label></span>
+                              </p>
+                            </td>
+                            <td class="td_bornon">
+                              <p class="line03">
+                                <span><input type="checkbox" id="setup36" name="set05"><label for="setup36">기여율(%)</label></span> 
+                              </p>
+                            </td>
+                          </tr>
+
+                         
+                      </tbody>
+                  </table>
+                  <div class="butt">
+                     
+                      <button id="close21" type="button" class="pop-btn">선택완료</button>
+
+                  </div>
+
+              </fieldset>
+      </div>
+  </div>
+  <footer id="footer">
+    <a href="#"><img src="img/chungbuk.png" alt="충북대학교"></a>
+    <span>충북 청주시 서원구 대로 1, NH관(E3-1) 3층<br>
+        충북대학교 산학협력단 기술사업화팀: 043-261-3963</span>
+ </footer>  
+  <div class="fixchoice" id="result-munu-bar">
+    <span>선택한 계약건 3건</span> <input type="checkbox" id="fixch"><label for="fixch">검색건 전부선택</label><button type="button">다운로드</button>
+  </div> 
+
+    </div><!--#wrap-->
+  
+     
+  </form>
+ 
+
+  <script src="js/script.js"></script>
+<script type="text/javascript"> 
+    $(document).ready(function () {
+        // 페이지 document 로딩 완료 후 스크립트 실행
+          $("#viewhidden").click(function () { status = $("#hidden").css("display"); if (status == "none") { $("#hidden").css("display", ""); } else { $("#hidden").css("display", "none"); } }); });
+          </script> 
+</body>
+</html>
